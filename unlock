@@ -1,0 +1,8 @@
+#!/bin/sh
+
+echo "Installing transcrypt ..."
+mkdir -p "$HOME/repos"
+git clone https://github.com/elasticdog/transcrypt.git "$HOME/repos/transcrypt"
+sudo ln -s "$HOME/repos/transcrypt/transcrypt" /usr/local/bin/transcrypt
+alias transcrypt=/usr/local/bin/transcrypt
+transcrypt
